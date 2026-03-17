@@ -1,0 +1,150 @@
+body {
+    margin: 0px !important;
+}
+
+.task-page-header {
+    padding: 14px;
+    background-color: #91D06C;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.button-style-one {
+    padding: 8px 10px;
+    border: 0px;
+    background: #FFF799;
+    border-radius: 4px;
+    color: #000000;
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0px 0px 3px 0px;
+}
+
+.current-date-text {
+    padding: 6px 10px;
+    background: #ffffff;
+    border-radius: 4px;
+    color: #000000;
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0px 0px 3px 0px;
+    width: fit-content;
+}
+
+.button-style-one:hover {
+    box-shadow: inset 0px 0px 3px 0px !important;
+}
+
+.current-date-plot, .load-presents-plot {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.calender-icon {
+    font-size: 20px;
+}
+
+.head-calendar-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 4px;
+    padding: 6px 10px;
+    box-shadow: 0px 0px 3px 0px;
+}
+
+.load-presents-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 4px;
+    padding: 6px 10px;
+    box-shadow: 0px 0px 3px 0px;
+}
+
+.task-page-body {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.error-task-card,
+.success-task-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error-task-card {
+    padding: 8px;
+    border: 2px solid #fc9494;
+    border-radius: 4px;
+}
+
+.success-task-card {
+    padding: 8px;
+    border: 2px solid #91d06c;
+    border-radius: 4px;
+}
+
+.task-name-title {
+    color: #000000;
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.task-page-footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+
+.task-page-footer ::ng-deep .mdc-linear-progress__buffer-bar {
+    background: transparent !important;
+}
+
+.task-page-section {
+    display: flex;
+    height: 100%;
+    max-height: 100%;
+    flex-direction: column;
+}
+
+.task-page-footer-actions {
+    padding: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #91d06c;
+}
+
+.sync-up-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 4px;
+    padding: 6px 10px;
+    box-shadow: 0px 0px 3px 0px;
+}
+
+.task-add-action {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.width-100-percent {
+    width: 100%;
+}

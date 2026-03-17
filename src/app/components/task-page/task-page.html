@@ -1,0 +1,34 @@
+<section class="task-page-section">
+    <div class="task-page-header">
+        <div class="load-presents-plot">
+            <button class="button-style-one">Load Presets</button>
+            <div class="load-presents-holder">
+                <i class="fa fa-pencil-square-o calender-icon" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="current-date-plot">
+            <div class="current-date-text">{{todayDate}}</div>
+            <div class="head-calendar-holder">
+                <i class="fa fa-calendar-o calender-icon" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="task-page-body">
+        <ng-container *ngFor="let task of taskList">
+            <div [ngClass]="(task.taskStatus == 'completed') ? 'success-task-card' : 'error-task-card'">
+                <div class="task-name-title">{{task.taskName}}</div>
+                <mat-slide-toggle [checked]="(task.taskStatus == 'completed') ? true : false" (change)="taskStatusChange(task)"></mat-slide-toggle>
+            </div>
+        </ng-container>
+    </div>
+    <div class="task-page-footer">
+        <mat-progress-bar mode="determinate" [value]="completionStatus" color="accent"></mat-progress-bar>
+        <div class="task-page-footer-actions">
+            <div class="task-add-action">
+                <button class="button-style-one" (click)="addTask()">Add</button>
+                <i class="fa fa-refresh calender-icon sync-up-icon" aria-hidden="true" (click)="triggerSyncUp()"></i>
+            </div>
+            <button class="button-style-one">Complete Day</button>
+        </div>
+    </div>
+</section>
